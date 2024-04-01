@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let name = prompt("Enter Your Name");
+        let eng = parseInt(prompt("Enter English Marks"));
+        let maths = parseInt(prompt("Enter Maths Marks"));
+
+        let a = parseInt(eng + maths);
+
+        let per = parseInt((a/200)*100);
+    
+        document.write("Student Name :",name,"<br>");
+        document.write("English Marks : ",eng,"<br>");
+        document.write("Maths Marks : ",maths,"<br>");
+        document.write("Total Marks : ",a,"<br>");
+        document.write("Percentage: ",per," % <br>");
+
+        if(per <=100 && per >=80){
+
+            document.write("Grade : A1");
+
+        }else if(per <=79 && per >=70)
+        {
+            document.write("Grade : A");
+
+        }else if(per <=69 && per >=60)
+        {
+            document.write("Grade : B");
+
+        }else if(per <=59 && per >=50)
+        {
+            document.write("Grade : C");
+
+        }else{
+            document.write("Fail");
+        }
+        
+    </script>
+</body>
+</html>
